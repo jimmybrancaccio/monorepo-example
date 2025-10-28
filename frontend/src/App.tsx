@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
       if (!isConnectionOpen) return;
 
-      const eventSource = new EventSource(import.meta.env.VITE_BACKEND_HOST + "/sse");
+      const eventSource = new EventSource("https://" + import.meta.env.VITE_BACKEND_HOST + "/sse");
 
       eventSource.onopen = () => {
           console.log("[SSE] Connection established");
