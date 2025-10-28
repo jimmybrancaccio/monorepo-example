@@ -8,7 +8,7 @@ export default defineConfig({
   root: "./src",
   envDir: "../",
   build: {
-    outDir: "../dist",
+    outDir: "../../dist",
     emptyOutDir: true,
   },
   server: {
