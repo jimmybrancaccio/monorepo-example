@@ -20,7 +20,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// set up connection for sse
-	w.Header().Set("Content-Type", "text/event-stream; charset=UTF-8")
+	w.Header().Set("Content-Type", "text/html; charset=UTF-8")
 	w.Header().Set("Cache-Control", "No-Cache")
 	w.Header().Set("Connection", "Keep-Alive")
 
